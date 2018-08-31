@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/jquery-3.3.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .top {
+            width: 1000px;
+            height: 60px;
+            background: #9ea4e2;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top img {
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            margin-right: 150px;
+            float: left;
+        }
+
+        .top ul {
+            color: aliceblue;
+            list-style: none;
+
+        }
+
+        .top li {
+            float: left;
+            margin-right: 100px;
+            margin-top: 15px;
+        }
+
+        .top td {
+            width: 50px;
+        }
+
+        .container {
+            margin-top: 50px;
+            margin-bottom: 60px;
+            background: aliceblue;
+            width: 1000px;
+            height: 460px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+        .container p:hover {
+            color: #868ed7;
+        }
+
+        .end {
+            position: relative;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .end>.icon {
+            margin-top: 15px;
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            background: url(images/adm.png) center;
+        }
+
+        .end>.adm {
+            padding-left: 20px;
+            position: relative;
+            top: 15px;
+
+        }
+
+        .adm a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .adm a:hover {
+            color: #868ed7;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        .picture {
+            width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .picture>div {
+            float: left;
+            width: 240px;
+            height: 300px;
+            border: 1px solid #9ea4e2;
+            text-align: center;
+            background: #fff;
+        }
+
+        .picture1 {
+            margin-right: 4px;
+        }
+
+        .picture2,
+        .picture3 {
+            margin-right: 4px;
+        }
+
+        .picture2 img,
+        .picture3 img {
+            margin-top: 20px;
+        }
+
+        .picture1 img {
+            margin-top: 10px;
+        }
+
+        .picture p {
+            font-size: 15px;
+            color: rgb(109, 104, 104);
+            margin-top: 30px;
+        }
+
+        .picture1 .p1 {
+            font-size: 20px;
+            margin-top: 1px;
+            margin-bottom: 22px;
+        }
+
+        .p1:hover {
+            color: #868ed7;
+            font-size: 22px;
+        }
+
+        .picture2 .p2:hover {
+            color: #868ed7;
+            font-size: 22px;
+        }
+
+        .picture3 .p3:hover {
+            color: #868ed7;
+            font-size: 22px;
+        }
+
+        .picture4 .p4:hover {
+            color: #868ed7;
+            font-size: 22px;
+        }
+
+        .picture2 .p2 {
+            font-size: 20px;
+            margin-top: 4px;
+            margin-bottom: 24px;
+        }
+
+        .picture3 .p3 {
+            font-size: 20px;
+            margin-top: 14px;
+            margin-bottom: 22px;
+        }
+
+        .picture4 .p4 {
+            font-size: 20px;
+            margin-top: 3px;
+            margin-bottom: 22px;
+        }
+
+        .education {
+            background: aliceblue;
+            width: 1000px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .education .edu {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            top: 20px;
+            color: black;
+        }
+
+        .education p {
+            font-size: 15px;
+            color: rgb(136, 138, 137);
+            margin-top: 70px;
+        }
+
+        .education p:hover {
+            color: #868ed7;
+        }
+
+        .education img {
+            height: 400px;
+            width: 450px;
+            float: left;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .travel {
+            background: aliceblue;
+            width: 1000px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        .travel>div {
+            float: left;
+            width: 240px;
+            height: 300px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        .travel p,
+        .footer p {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+        .travel p:hover,
+        .footer p:hover {
+            color: #868ed7;
+        }
+
+        .travel img {
+            margin-top: 20px;
+            position: absolute;
+            left: 19px;
+            width: 200px;
+            height: 280px;
+            opacity: 0.5;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+        .pi img{
+            opacity: 0.8;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+        .pi img:hover{
+            opacity: 1;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+
+        .travel img:hover {
+            opacity: 1;
+            transition: all 1s;
+        }
+
+         .footer{
+            background: aliceblue;
+            height: 300px;
+            width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            margin-top:50px;
+        }
+        .footer img{
+            margin-top:19px;
+            margin-left: 30px;
+            width: 200px;
+            height: 200px;
+        }
+        
+
+        .container{
+            background: aliceblue;
+            width: 1000px;
+            height: 500px;
+        }
+        .pi img {
+            height: 200px;
+            width:100%;
+            box-sizing: border-box;
+            margin-top: 25px;
+  
+        }
+
+        .works p{
+            width: 100px;
+            height: 30px;
+            font-size: 17px;
+            background: #868ed7;
+            border-radius: 23px 0px 23px 0px;
+            margin-left: 9px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="images/01.png" alt="">
+        <ul>
+            <li>hobby</li>
+            <li>education</li>
+            <li>travel</li>
+            <li>sample-reels</li>
+        </ul>
+        <div class="end">
+            <span class="icon"></span>
+            <span class="adm">
+                <a href="index.html">个人中心</a>
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <p>What I like to do......</p>
+        <div class="picture">
+            <div class="picture1">
+                <img src="images/微笑.png" alt="">
+                <p class="p1">微笑</p>
+                <p>幽默是心灵的微笑。最深刻的幽默是一颗受了致命伤的心灵发出的微笑。——周国平</p>
+            </div>
+            <div class="picture2">
+                <img src="images/灯泡.png" alt="">
+                <p class="p2">思考</p>
+                <p>世上最艰难的工作是什么？思想。凡是值得思想的事情，没有不是人思考过的；我们必须做的只是试图重新加以思考而已。—— 歌德</p>
+            </div>
+            <div class="picture3">
+                <img src="images/照片.png" alt="">
+                <p class="p3">摄影</p>
+                <p>我渴望捕捉我眼前所有的美，经过长期的努力，终于如愿以偿。——朱莉娅·玛格丽特·卡梅伦</p>
+            </div>
+            <div class="picture4">
+                <img src="images/读书.png" alt="">
+                <p class="p4">读书</p>
+                <p>读书时要深思多问。只读而不想，就可能人云亦云，沦为书本的奴隶；或者走马看花，所获甚微。 —— 王梓坤</p>
+            </div>
+        </div>
+    </div>
+    <div class="education">
+        <p class="edu">EDUCATION</p>
+        <img src="images/img1.jpg" alt="">
+        <p>大家好，我是一名计算机系大三的学生，我叫汪娟</p>
+        <p>2003年~2009年，湖北咸宁，崇阳某某某小学</p>
+        <p>2009年~2012年，湖北咸宁，崇阳城关中学</p>
+        <p>2012年~2015年，湖北咸宁，崇阳职业技术学院</p>
+        <p>2015年~2019年，湖北武汉，湖北大学知行学院</p>
+    </div>
+    <div class="travel">
+        <p>TRAVEL</p>
+        <div>
+            <img src="images/上海.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/风景1.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/南长街.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/风景.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center">
+        <div class="works">
+            <p>sample-reels</p>
+        
+        <div class="pi">
+            <div class="col-md-3">
+                <a href="01个人网页.html">
+                    <img src="images/22.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="02诗意生活.html">
+                    <img src="images/23.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="03关于远大.html">
+                    <img src="images/22.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="04家庭医生.html">
+                    <img src="images/25.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="05作业.html">
+                    <img src="images/26.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="06作业.html">
+                    <img src="images/22.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="07小米官网.html">
+                    <img src="images/24.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="08作业.html">
+                    <img src="images/22.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        </div></div>
+    </div>
+    
+
+    <div class="footer">
+        <p>Contact Me</p>
+        <img src="images/qq.jpg" alt="">
+        <img src="images/微博.png" alt="">
+        <img src="images/微信.jpg" alt="">
+    </div>
+</body>
+
+</html>
